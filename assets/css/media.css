@@ -1,5 +1,49 @@
-@media (max-width: 575px) {
+@media (min-width: 575px) {
+    .banner-contant h3 {
+        font-size: 13px;
+        color: var(--white);
+    }
 
+    .banner-contant h2 {
+        font-size: 55px !important;
+        color: var(--white);
+    }
+      .small-tours {
+    grid-template-columns: 1fr; /* Small tours stacked vertically */
+  }
+
+  .price-tag {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+
+  .tour-info {
+    font-size: 14px;
+    bottom: 10px;
+    left: 10px;
+  }  
+    .video-text {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+     .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .titel h2 {
+        font-size: 24px;
+    }
+
+    .titel p {
+        font-size: 14px;
+    }
+      .content {
+
+    margin: 0 auto;               /* Center horizontally */
+    height: auto !important;     /* Let height adjust */
+    text-align: center;           /* Center text */
+  }
+    
 }
 
 @media (min-width:576px) {
@@ -50,8 +94,19 @@
     .col-sm-12 {
         width: 100%;
     }
+
     .container-fluid {
         padding: 0 36px;
+    }
+
+    .banner-contant h3 {
+        font-size: 13px;
+        color: var(--white);
+    }
+
+    .banner-contant h2 {
+        font-size: 55px !important;
+        color: var(--white);
     }
 
 }
@@ -104,12 +159,25 @@
     .col-md-12 {
         width: 100%;
     }
+
     .container-fluid {
         padding: 0 36px;
     }
+     
 }
 
 @media (min-width:992px) {
+
+    .banner-contant h3 {
+        font-size: 24px !important;
+        color: var(--white);
+    }
+
+    .banner-contant h2 {
+        font-size: 80px !important;
+        color: var(--white);
+    }
+
     .col-lg-1 {
         width: 8.33%;
     }
@@ -157,15 +225,79 @@
     .col-lg-12 {
         width: 100%;
     }
-    .d-lg-flex{
+
+    .d-lg-flex {
         display: flex;
     }
-    .d-lg-none{
+
+    .d-lg-none {
         display: none;
     }
+
     .container-fluid {
         padding: 0 50px;
     }
+     
+
+.tour-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.large-tour {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.small-tours {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tour {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.tour img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tour:hover img  {
+    transform: scale(1.1);
+}
+
+.tour-info {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.price-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.stars {
+    color: gold;
+    font-size: 14px;
+}
+
 }
 
 @media (min-width:1200px) {
@@ -184,6 +316,7 @@
     .col-xl-4 {
         width: 33.33%;
     }
+
     .col-xl-5 {
         width: 41.66%;
     }
@@ -191,7 +324,7 @@
     .col-xl-6 {
         width: 50%;
     }
-    
+
     .col-xl-7 {
         width: 58.33%;
     }
@@ -215,6 +348,7 @@
     .col-xl-12 {
         width: 100%;
     }
+
     .container-fluid {
         padding: 0 100px;
         display: flex;
@@ -269,6 +403,7 @@
     .col-xxl-12 {
         width: 100%;
     }
+
     .container-fluid {
         padding: 0 160px;
     }
